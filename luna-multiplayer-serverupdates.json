@@ -1,0 +1,35 @@
+[
+    {
+        "UpdateStageName": "Downloading Luna Multiplayer Server",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "GithubRelease",
+        "UpdateSourceData": "LunaMultiplayer-Server-Release.zip",
+        "UpdateSourceArgs": "LunaMultiplayer/LunaMultiplayer",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": true
+    },
+    {
+        "UpdateStageName": "Extracting...",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "ExtractArchive",
+        "UpdateSourceArgs": "./LunaMultiplayer-Server-Release.zip",
+        "UpdateSourceTarget": "./",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    },
+    {
+        "UpdateStageName": "Extracting...",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "CopyFilePath",
+        "UpdateSourceData": "./",
+        "UpdateSourceArgs": "./LunaMultiplayer-Server-Release/LMPServer",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    }
+]
